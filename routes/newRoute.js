@@ -2,7 +2,7 @@ const { Router } = require('express');
 
 const newRoute = Router();
 
-newRoute.get('/new', (req, res) => {
+newRoute.get('/', (req, res) => {
   res.send('This is for new');
 });
 
