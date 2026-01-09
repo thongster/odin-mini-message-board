@@ -6,7 +6,7 @@ const newRoute = Router();
 const messages = require('../models/messageModel');
 
 newRoute.get('/', (req, res) => {
-  res.send('This is for new');
+  res.render('new');
 });
 
 newRoute.post('/', (req, res) => {
@@ -15,11 +15,7 @@ newRoute.post('/', (req, res) => {
     user: req.body.user,
     added: new Date(),
   });
-  res.send(`${req.body.message}`);
-});
-
-newRoute.get('/form', (req, res) => {
-  res.render('form');
+  res.redirect('/');
 });
 
 module.exports = newRoute;
