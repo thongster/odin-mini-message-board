@@ -20,7 +20,10 @@ const messages = [
 ];
 
 indexRoute.get('/', (req, res) => {
-  res.render('index', { title: 'Mini Messageboard', messages: messages });
+  res.render('index', {
+    title: 'Free Market Messageboard',
+    messages: messages,
+  });
 });
 
 module.exports = indexRoute;
