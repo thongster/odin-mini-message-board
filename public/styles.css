@@ -65,3 +65,31 @@ body {
   color: #777;
   text-align: right;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  margin-top: 0.2rem;
+  padding: 0.4rem 0.4rem;
+  font-size: 14px;
+  border: 2px solid #b5b5b5;
+  background: #ffffff;
+  outline: none;
+}
+
+input:focus {
+  background: #fdfbe6;
+  border-color: #f2b705;
+}
