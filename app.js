@@ -1,5 +1,9 @@
+// set up express
 const express = require('express');
 const app = express();
+
+// middleware to parse form info
+app.use(express.urlencoded({ extended: true }));
 
 // set up ejs using views directory
 const path = require('node:path');

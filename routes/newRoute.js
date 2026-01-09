@@ -1,5 +1,5 @@
+// import router and create new router
 const { Router } = require('express');
-
 const newRoute = Router();
 
 newRoute.get('/', (req, res) => {
@@ -7,7 +7,7 @@ newRoute.get('/', (req, res) => {
 });
 
 newRoute.post('/', (req, res) => {
-  res.send('Message sent!');
+  res.send(`${req.body.message}`);
 });
 
 newRoute.get('/form', (req, res) => {
