@@ -19,3 +19,41 @@ body {
     0 8px 0 rgba(0, 0, 0, 0.25);
   padding: 16px;
 }
+
+.mainInner h1 {
+  margin: 0 0 1rem;
+  padding: 6px 8px;
+  font-size: 18px;
+  background: #dcdcdc;
+  border: 2px solid #8a8a8a;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 2px solid #b5b5b5;
+  padding: 0.5rem;
+  margin-bottom: .75rem;
+  font-size: 14px;
+  gap: 0.5rem;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message p:first-child {
+  font-weight: bold;
+}
+
+.message p:nth-child(2) {
+  color: #1c6ed5;
+  font-size: 13px;
+}
+
+.message p:last-child {
+  font-size: 11px;
+  color: #777;
+  text-align: right;
+}
