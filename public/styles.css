@@ -7,17 +7,18 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 1rem 0.5rem;
 }
 
 .mainInner {
+  height: min-content;
   width: 480px;
   background: #f4f4f4;
   border: 3px solid #6b6b6b;
   box-shadow:
     inset 0 0 0 2px #dbdbdb,
     0 8px 0 rgba(0, 0, 0, 0.25);
-  padding: 16px;
+  padding: 1.5rem 1rem;
   border-radius: 0.5rem;
 }
 
@@ -80,7 +81,7 @@ label {
   color: #333;
 }
 
-input {
+input, textarea {
   margin-top: 0.2rem;
   padding: 0.4rem 0.4rem;
   font-size: 14px;
@@ -90,9 +91,13 @@ input {
   border-radius: 0.5rem;
 }
 
-input:focus {
+input:focus, textarea:focus {
   background: #fdfbe6;
   border-color: #f2b705;
+}
+
+textarea {
+    resize: none;
 }
 
 button {
