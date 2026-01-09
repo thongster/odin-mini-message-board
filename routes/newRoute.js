@@ -7,6 +7,7 @@ newRoute.get('/', (req, res) => {
 });
 
 newRoute.post('/', (req, res) => {
+  console.log(req.body);
   res.send(`${req.body.message}`);
 });
 
