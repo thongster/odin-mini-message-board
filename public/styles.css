@@ -87,9 +87,25 @@ input {
   border: 2px solid #b5b5b5;
   background: #ffffff;
   outline: none;
+  border-radius: 0.5rem;
 }
 
 input:focus {
   background: #fdfbe6;
   border-color: #f2b705;
+}
+
+button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(#a1eafb, #6fb1fc);
+  border: 2px solid #2a5586;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background: #a1eafb;
 }
