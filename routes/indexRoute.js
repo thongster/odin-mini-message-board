@@ -13,8 +13,13 @@ const messages = [
     added: new Date(),
   },
   {
-    text: "Spent 2 hours at Henesys Hunting Ground ks'ing noobs. Classic Maple.",
+    text: "Spent 2 hours at Henesys Hunting Ground ks'ing noobs and loved every minute of it. Classic Maple.",
     user: 'IlikeArrow',
+    added: new Date(),
+  },
+  {
+    text: "Anybody want to start a guild? We'll be super active for 4 weeks and then never log on again",
+    user: 'Soupd',
     added: new Date(),
   },
 ];

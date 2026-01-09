@@ -18,6 +18,7 @@ body {
     inset 0 0 0 2px #dbdbdb,
     0 8px 0 rgba(0, 0, 0, 0.25);
   padding: 16px;
+  border-radius: 0.5rem;
 }
 
 .mainInner h1 {
@@ -26,6 +27,7 @@ body {
   font-size: 18px;
   background: #dcdcdc;
   border: 2px solid #8a8a8a;
+  border-radius: 0.5rem;
 }
 
 .message {
@@ -37,6 +39,12 @@ body {
   margin-bottom: .75rem;
   font-size: 14px;
   gap: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.message:hover {
+  background: #fdfbe6;
+  border-color: #f2b705;
 }
 
 .message p {
