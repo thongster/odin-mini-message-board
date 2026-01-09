@@ -16,9 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // import routers
 const indexRoute = require('./routes/indexRoute');
 const newRoute = require('./routes/newRoute');
+const messagesRoute = require('./routes/messagesRoute');
 
 // use routes
 app.use('/new', newRoute);
+app.use('/messages', messagesRoute);
 app.use('/', indexRoute);
 
 // start server
