@@ -22,7 +22,9 @@
                         <%= message.added.toDateString() %>,
                         <%= message.added.toLocaleTimeString() %>
                     </p>
-                    <a href="/messages/<%= index %>" class="openBtn">Open</a>
+                    <div class="action">
+                        <a href="/messages/<%= index %>" class="openBtn">Open</a>
+                    </div>
                 </div>
             <% }) %>
         </div>
