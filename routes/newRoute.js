@@ -2,12 +2,19 @@
 const { Router } = require('express');
 const newRoute = Router();
 
+// import messages model
+const messages = require('../models/messageModel');
+
 newRoute.get('/', (req, res) => {
   res.send('This is for new');
 });
 
 newRoute.post('/', (req, res) => {
-  console.log(req.body);
+  messages.push({
+    text: req.body.message,
+    user: req.body.user,
+    added: new Date(),
+  });
   res.send(`${req.body.message}`);
 });
 
