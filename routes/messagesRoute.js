@@ -3,10 +3,11 @@ const { Router } = require('express');
 const messagesRoute = Router();
 
 // import messages model
-const messagesArray = require('../models/messageModel');
+const messages = require('../models/messageModel');
 
 messagesRoute.get('/:id', (req, res) => {
-  res.send('testing');
+  const message = messages[req.params.id];
+  res.render('messages', { message: message });
 });
 
 module.exports = messagesRoute;

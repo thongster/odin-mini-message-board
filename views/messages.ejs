@@ -14,7 +14,14 @@
                 <h1>Message</h1>
                 <a href="/" class="backBtn">Back</a>
             </div>
-
+                <div class="message">
+                    <p><%= message.text %></p>
+                    <p><%= message.user %></p>
+                    <p>
+                        <%= message.added.toDateString() %>,
+                        <%= message.added.toLocaleTimeString() %>
+                    </p>
+                </div>
         </div>
     </div>
 </body>
