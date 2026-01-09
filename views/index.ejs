@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Market - Mini Message Board Project</title>
+    <title>Maya's House - Mini Message Board Project</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/mushicon.png">
 </head>
 <body>
     <div class="main">
@@ -14,7 +15,10 @@
                 <div class="message">
                     <p><%= message.text %></p>
                     <p><%= message.user %></p>
-                    <p><%= message.added %></p>
+                    <p>
+                        <%= message.added.toDateString() %>,
+                        <%= message.added.toLocaleTimeString() %>
+                    </p>
                 </div>
             <% }) %>
         </div>

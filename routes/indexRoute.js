@@ -21,7 +21,7 @@ const messages = [
 
 indexRoute.get('/', (req, res) => {
   res.render('index', {
-    title: 'Free Market Messageboard',
+    title: "Maya's House Message Board",
     messages: messages,
   });
 });
