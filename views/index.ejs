@@ -10,7 +10,10 @@
 <body>
     <div class="main">
         <div class="mainInner">
-            <h1><%= title %></h1>
+            <div class="header">
+                <h1><%= title %></h1>
+                <a href="/new" class="newMsgBtn">+New</a>
+            </div>
             <% messages.forEach((message) => { %>
                 <div class="message">
                     <p><%= message.text %></p>

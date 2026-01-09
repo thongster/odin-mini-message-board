@@ -22,6 +22,11 @@ body {
   border-radius: 0.5rem;
 }
 
+.header {
+    display: flex;
+    gap: 1rem;
+}
+
 .mainInner h1 {
   margin: 0 0 1rem;
   padding: 6px 8px;
@@ -29,6 +34,26 @@ body {
   background: #dcdcdc;
   border: 2px solid #8a8a8a;
   border-radius: 0.5rem;
+}
+
+.header h1 {
+    width: 100%;
+}
+
+.newMsgBtn {  
+  margin: 0 0 1rem;
+  padding: 6px 8px;
+  background: #f2b705;
+  border: 2px solid #c99a04;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  border-radius: 0.5rem;
+}
+
+.newMsgBtn:hover {
+  background: #fdfbe6;
+  border-color: #f2b705;
 }
 
 .message {
@@ -91,7 +116,15 @@ input, textarea {
   border-radius: 0.5rem;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus {.newMsgBtn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f2b705;
+  border: 2px solid #c99a04;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
   background: #fdfbe6;
   border-color: #f2b705;
 }
@@ -114,3 +147,4 @@ button {
 button:hover {
   background: #a1eafb;
 }
+
