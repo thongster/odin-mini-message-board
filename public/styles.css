@@ -40,7 +40,7 @@ body {
     width: 100%;
 }
 
-.newMsgBtn {  
+.newMsgBtn, .backBtn {  
   margin: 0 0 1rem;
   padding: 6px 8px;
   background: #f2b705;
@@ -51,20 +51,17 @@ body {
   border-radius: 0.5rem;
 }
 
-.newMsgBtn:hover {
+.newMsgBtn:hover, .backBtn:hover {
   background: #fdfbe6;
   border-color: #f2b705;
 }
 
 .message {
-  display: flex;
-  flex-direction: column;
   background: #ffffff;
   border: 2px solid #b5b5b5;
   padding: 0.5rem;
   margin-bottom: .75rem;
   font-size: 14px;
-  gap: 0.5rem;
   border-radius: 0.5rem;
 }
 
@@ -74,7 +71,7 @@ body {
 }
 
 .message p {
-  margin: 0;
+  margin: 0.3rem 0;
 }
 
 .message p:first-child {
@@ -148,3 +145,22 @@ button:hover {
   background: #a1eafb;
 }
 
+.openBtn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 10px;
+
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+
+  background: #f2b705;
+  border: 2px solid #c99a04;
+
+  box-shadow:
+    inset 0 1px 0 #fff6c7,
+    0 2px 0 #8a6a00;
+
+  cursor: pointer;
+}
