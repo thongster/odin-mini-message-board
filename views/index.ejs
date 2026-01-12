@@ -14,16 +14,16 @@
                 <h1><%= title %></h1>
                 <a href="/new" class="newMsgBtn">+New</a>
             </div>
-            <% messages.forEach((message, index) => { %>
+            <% messages.forEach((message) => { %>
                 <div class="message">
                     <p><%= message.text %></p>
-                    <p><%= message.user %></p>
+                    <p><%= message.username %></p>
                     <p>
                         <%= message.added.toDateString() %>,
                         <%= message.added.toLocaleTimeString() %>
                     </p>
                     <div class="action">
-                        <a href="/messages/<%= index %>" class="openBtn">Open</a>
+                        <a href="/messages/<%= message.id %>" class="openBtn">Open</a>
                     </div>
                 </div>
             <% }) %>

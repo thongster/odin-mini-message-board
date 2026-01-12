@@ -5,6 +5,11 @@ async function getAllMessages() {
   return rows;
 }
 
-async function insertUsername(username) {}
+async function getMessageByID(id) {
+  const { rows } = await pool.query('SELECT * FROM messages WHERE id = ($1)', [
+    id,
+  ]);
+  return rows;
+}
 
-module.exports = { getAllMessages };
+module.exports = { getAllMessages, getMessageByID };

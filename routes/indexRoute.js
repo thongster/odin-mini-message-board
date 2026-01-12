@@ -2,9 +2,6 @@
 const { Router } = require('express');
 const indexRoute = Router();
 
-// // import messages model
-// const messages = require('../models/messageModel');
-
 // import queries
 const db = require('../db/queries');
 

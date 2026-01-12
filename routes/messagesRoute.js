@@ -2,11 +2,16 @@
 const { Router } = require('express');
 const messagesRoute = Router();
 
-// import messages model
-const messages = require('../models/messageModel');
+// // import messages model
+// const messages = require('../models/messageModel');
 
-messagesRoute.get('/:id', (req, res) => {
-  const message = messages[req.params.id];
+// import queries
+const db = require('../db/queries');
+
+messagesRoute.get('/:id', async (req, res) => {
+  const query = await db.getMessageByID(Number(req.params.id));
+  const message = query[0];
+  console.log(message);
   res.render('messages', { message: message });
 });
 
