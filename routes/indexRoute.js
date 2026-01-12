@@ -2,10 +2,14 @@
 const { Router } = require('express');
 const indexRoute = Router();
 
-// import messages model
-const messages = require('../models/messageModel');
+// // import messages model
+// const messages = require('../models/messageModel');
 
-indexRoute.get('/', (req, res) => {
+// import queries
+const db = require('../db/queries');
+
+indexRoute.get('/', async (req, res) => {
+  const messages = await db.getAllMessages();
   res.render('index', {
     title: "Maya's House Message Board",
     messages: messages,
